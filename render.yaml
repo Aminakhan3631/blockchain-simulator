@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: blockchain-simulator
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn main_app:app
+    plan: free
